@@ -175,8 +175,8 @@
   .exmx .detail .txt:last-child{margin-bottom:0;}
   .exmx .detail .txt ul{margin:0;padding-left:18px;}
   .exmx .detail .txt li{margin-bottom:8px;}
-  .map-insight{position:absolute;left:34px;bottom:34px;max-width:520px;border:1px solid var(--gold-line);border-radius:16px;background:rgba(22,29,39,.82);backdrop-filter:blur(10px);padding:16px 20px;box-shadow:0 18px 50px rgba(0,0,0,.26);}
-  .map-insight .eyebrow{font-size:var(--fs-note);letter-spacing:1px;color:var(--gold);margin-bottom:4px;}
+  .map-insight{max-width:1050px;margin:14px auto 10px;border:1px solid var(--gold-line);border-radius:16px;background:rgba(22,29,39,.72);padding:14px 18px;display:flex;gap:16px;align-items:flex-start;}
+  .map-insight .eyebrow{flex:none;font-size:var(--fs-note);letter-spacing:1px;color:var(--gold);padding-top:2px;}
   .map-insight strong{display:block;color:var(--gold-bright);font-size:var(--fs-body);line-height:1.65;}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px;}
   .chip-btn{cursor:pointer;background:var(--card-2);border:1px solid var(--border);color:var(--text-2);border-radius:999px;padding:6px 14px;font-size:var(--fs-note);font-family:var(--font-zh);transition:.18s;}
@@ -371,7 +371,8 @@
     .handoff-arrow{display:none;}
     .wide-bleed{width:auto;margin-left:0;transform:none;}
     .exmx .chart{padding:10px;min-height:auto;}
-    .exmx .detail,.map-insight,.portrait-card{position:static;width:auto;max-height:none;margin-top:14px;}
+    .exmx .detail,.portrait-card{position:static;width:auto;max-height:none;margin-top:14px;}
+    .map-insight{display:block;}
     .step{grid-template-columns:1fr;}
     .step .no{width:48px;height:48px;}
     section{padding:64px 0;}
@@ -527,27 +528,22 @@
       <text x="40" y="205" text-anchor="middle" fill="#97a1ae" font-size="15" font-family="Noto Sans TC" transform="rotate(-90 40 205)">陪伴深度　低 → 高</text>
       <text x="102" y="50" fill="#e0a23c" font-size="14" font-family="Noto Sans TC" opacity=".9">低成本 × 高陪伴</text>
       <g font-family="Noto Sans TC" font-size="14" fill="#cfd6e0">
-        <g class="dot" data-sol="test"><circle cx="118" cy="198" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="129" y="202">測驗</text></g>
-        <g class="dot" data-sol="event"><circle cx="205" cy="240" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="216" y="244">短期活動</text></g>
-        <g class="dot" data-sol="info"><circle cx="145" cy="305" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="156" y="309">資訊平台</text></g>
-        <g class="dot" data-sol="ai"><circle cx="240" cy="350" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="251" y="354">一般 AI</text></g>
+        <g class="dot" data-sol="test"><circle cx="180" cy="290" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="191" y="294">測驗</text></g>
+        <g class="dot" data-sol="event"><circle cx="290" cy="225" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="301" y="229">短期活動</text></g>
+        <g class="dot" data-sol="info"><circle cx="135" cy="330" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="146" y="334">資訊平台</text></g>
+        <g class="dot" data-sol="ai"><circle cx="235" cy="255" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="246" y="259">一般 AI</text></g>
         <g class="dot" data-sol="portfolio"><circle cx="470" cy="255" r="6" fill="#6b7280" filter="url(#dotShadow)"/><text x="481" y="259">學習歷程</text></g>
         <g class="dot" data-sol="school"><circle cx="335" cy="60" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="348" y="64">學校輔導</text></g>
-        <g class="dot" data-sol="dream"><circle cx="665" cy="78" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="652" y="82" text-anchor="end">DreamMore</text></g>
+        <g class="dot" data-sol="dream"><circle cx="590" cy="60" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="578" y="64" text-anchor="end">DreamMore</text></g>
         <g class="dot" data-sol="college"><circle cx="445" cy="118" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="458" y="122">大學課程</text></g>
-        <g class="dot" data-sol="camp"><circle cx="585" cy="48" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="598" y="52">高品質探索營</text></g>
-        <g class="dot" data-sol="coach"><circle cx="535" cy="152" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="548" y="156">成人職涯教練</text></g>
+        <g class="dot" data-sol="camp"><circle cx="645" cy="110" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="633" y="114" text-anchor="end">高品質探索營</text></g>
+        <g class="dot" data-sol="coach"><circle cx="678" cy="52" r="8" fill="#9aa4b2" filter="url(#dotShadow)"/><text x="666" y="56" text-anchor="end">成人職涯教練</text></g>
         <g class="dot active" data-sol="proposal">
           <circle cx="215" cy="115" r="14" fill="#e0a23c" stroke="#f0c46e" stroke-width="3.5" filter="url(#dotShadow)"/>
           <text x="215" y="146" text-anchor="middle" fill="#f0c46e" font-size="15" font-weight="700">本提案</text>
         </g>
       </g>
     </svg>
-      </div>
-
-      <div class="map-insight">
-        <div class="eyebrow">讀圖重點</div>
-        <strong>缺的不是更多單點資源，而是一套低成本、可長期、能累積資料，並在關鍵時刻接上真人的探索系統。</strong>
       </div>
 
       <div class="detail" id="solDetail">
@@ -559,6 +555,11 @@
         <div class="lab" id="solGapLab">主要缺口</div>
         <div class="txt" id="solGap"></div>
       </div>
+    </div>
+
+    <div class="map-insight">
+      <div class="eyebrow">讀圖重點</div>
+      <strong>缺的不是更多單點資源，而是一套低成本、可長期、能累積資料，並在關鍵時刻接上真人的探索系統。</strong>
     </div>
 
     <div class="chips" id="solChips">
