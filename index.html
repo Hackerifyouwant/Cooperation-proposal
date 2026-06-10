@@ -88,6 +88,11 @@
   .visual-proof{margin:28px 0 42px;border:1px solid var(--gold-line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.025);box-shadow:0 24px 70px rgba(0,0,0,.22);}
   .visual-proof img{display:block;width:100%;height:auto;}
   .visual-proof .caption{padding:14px 18px;color:var(--text-3);font-size:var(--fs-note);line-height:1.6;background:rgba(22,29,39,.78);}
+  .video-embed{margin:24px 0 32px;border:1px solid var(--gold-line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.025);box-shadow:0 24px 70px rgba(0,0,0,.22);}
+  .video-embed .frame{position:relative;width:100%;padding-top:56.25%;background:#000;}
+  .video-embed .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .video-embed .caption{padding:14px 18px;color:var(--text-3);font-size:var(--fs-note);line-height:1.6;background:rgba(22,29,39,.78);}
+  .video-embed .caption b{color:var(--gold-bright);}
   .module-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 16px;padding:0;list-style:none;}
   .module-grid li{background:rgba(255,255,255,.035);border:1px solid var(--border);border-radius:12px;padding:12px 14px;color:var(--text-2);line-height:1.6;}
   .module-grid li b{display:block;color:var(--gold-bright);margin-bottom:4px;}
@@ -685,6 +690,11 @@
 
   <p>所以，這不是「把 ChatGPT 放進生涯探索」，而是把 AI 對話變成一套可以協作的探索資料系統：它用生涯架構引導學生，把探索結果寫回資料庫，讓學生、老師與 mentor 能圍繞同一份資料討論，並讓每一次探索都成為下一次判斷的基礎。</p>
 
+  <figure class="video-embed">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/hthimbdrhpE" title="問題解決履歷教練 DEMO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    <figcaption class="caption"><b>實際示範｜問題解決履歷教練</b>　這支影片示範的，正是「用生涯架構引導學生」實際運作起來的樣子——AI 不是直接給答案，而是順著一套架構，陪學生把問題拆開、釐清、收斂成可以行動的下一步。</figcaption>
+  </figure>
+
   <h3>AI 與真人的分工</h3>
   <p>這套系統不是純 AI 服務。它真正的價值，是把 AI 和真人放在各自最適合的位置。真人的真實經驗無可替代——AI 無法真正取代一位學長姐、mentor、老師或職人親口說出：「我走過這條路，現場其實長這樣。」而生涯議題從來不只是「選科系」，學生卡住的背後常同時有家庭期待、經濟壓力、情緒狀態、學業挫折、同儕比較與自我認同。</p>
 
@@ -803,6 +813,12 @@
       <li><b>拆細方向</b>把「心理學」拆成助人陪伴、情緒關係、人類行為研究等更具體路徑。</li>
       <li><b>留下問題</b>標出每個方向還需要驗證的現實問題。</li>
     </ul>
+
+    <figure class="video-embed">
+      <div class="frame"><iframe src="https://www.youtube.com/embed/YU5dE4lvGQI" title="天職分析 AI 教練 DEMO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <figcaption class="caption"><b>實際示範｜天職分析 AI 教練</b>　當學生的測驗、經驗與反思都已經整理進資料庫，AI 就能直接調用這些資料進行交叉分析，整理出可能的職涯方向；接著自動查找相符的職缺資訊，回寫到資料庫中，讓學生能進一步閱讀、理解與比對。</figcaption>
+    </figure>
+
     <div class="human-note"><b>真人節點：</b>這些方向不是最終答案，而是後續探索的起點。AI 先幫學生形成初步假設，真人 mentor、老師或職人協助判斷假設是否貼近真實脈絡。</div>
   </div></div>
 
