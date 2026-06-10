@@ -82,6 +82,9 @@
   .visual-list li{background:rgba(255,255,255,.035);border:1px solid var(--border);border-left:3px solid var(--gold-line);border-radius:12px;padding:12px 16px;color:var(--text-2);line-height:1.65;}
   .visual-list.compact{grid-template-columns:repeat(2,1fr);}
   .visual-list.questions li{border-left-color:var(--gold);background:rgba(224,162,60,.055);}
+  .visual-proof{margin:28px 0 42px;border:1px solid var(--gold-line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.025);box-shadow:0 24px 70px rgba(0,0,0,.22);}
+  .visual-proof img{display:block;width:100%;height:auto;}
+  .visual-proof .caption{padding:14px 18px;color:var(--text-3);font-size:var(--fs-note);line-height:1.6;background:rgba(22,29,39,.78);}
   .module-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0 16px;padding:0;list-style:none;}
   .module-grid li{background:rgba(255,255,255,.035);border:1px solid var(--border);border-radius:12px;padding:12px 14px;color:var(--text-2);line-height:1.6;}
   .module-grid li b{display:block;color:var(--gold-bright);margin-bottom:4px;}
@@ -457,17 +460,16 @@
   <p>今天高中生並不是完全沒有生涯探索資源。</p>
   <p>相反地，學生身邊其實有很多資源：</p>
   </div>
-  <ul class="visual-list compact">
-    <li><strong>校內支持：</strong>導師、輔導老師、生涯輔導課。</li>
-    <li><strong>制度任務：</strong>自主學習、學習歷程、申請動機。</li>
-    <li><strong>外部資源：</strong>測驗、營隊、講座、科系資訊平台、升學顧問。</li>
-    <li><strong>新工具：</strong>ChatGPT、Claude、Gemini 與各種 AI 生涯建議工具。</li>
-  </ul>
+  <figure class="visual-proof">
+    <img src="assets/resources-not-system.png" alt="資源很多，但沒有形成完整探索系統的視覺化圖">
+    <figcaption>學生身邊有測驗、平台、導師、學習歷程、營隊、講座與 AI 工具；真正缺的不是資源，而是能陪學生走完整個探索循環的系統。</figcaption>
+  </figure>
   <div class="breath">
   <p>但現場真正的問題是：</p>
   <p><strong>這些資源大多各自處理一小段，沒有被串成一條完整的探索路徑。</strong></p>
-  <p>一位高中生可能經歷這樣的過程：</p>
+  <p>學生不知道如何使用資源，也沒有人穩定陪他走完整個探索循環。</p>
   </div>
+  <p>一位高中生可能經歷這樣的過程：</p>
   <ol class="steps">
     <li>高一聽到很多熱門科系與未來趨勢。</li>
     <li>高二參加營隊、社團、自主學習與各種活動。</li>
@@ -630,10 +632,13 @@
   </ol>
 
   <h3>核心價值：不只是聊天，而是讓探索可以累積與協作</h3>
+  <figure class="visual-proof">
+    <img src="assets/exploration-data-system.png" alt="讓探索資料不再四散各地的視覺化圖">
+    <figcaption>每一次測驗、對話、行動與反思，都能累積成可檢視、可調用、可協作的個人探索檔案。</figcaption>
+  </figure>
   <p class="break-lines">
-    <span>這套系統和一般 AI 聊天工具最大的差異，是學生的探索資料會不會被整理成一套可檢視、可調用、可協作的探索資料庫。</span>
-    <span>一般 AI 聊天工具常見的限制是：資料多留在學生自己的聊天視窗裡，摘要需要學生自行搬運，整理品質也取決於學生怎麼問、AI 怎麼整理；</span>
-    <span>更重要的是，它通常缺少固定的生涯架構，也很難讓學生、老師、mentor、諮詢師與業師圍繞同一份資料協作。</span>
+    <span>這套系統和一般 AI 聊天工具最大的差異，不是能不能聊天，而是探索資料會不會被整理成一套可檢視、可調用、可協作的個人探索檔案。</span>
+    <span>因此，學生、老師與 mentor 才能圍繞同一份資料協作，而不是每次都重新理解學生的狀態。</span>
   </p>
 
   <div class="vs">
