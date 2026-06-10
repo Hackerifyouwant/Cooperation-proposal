@@ -152,13 +152,13 @@
 
   /* ── 互動：方案盤點 × 低成本×高陪伴 定位圖 ── */
   .exmx{position:relative;margin:22px 0 28px;}
-  .exmx .chart{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:16px;padding:10px;padding-right:245px;min-height:560px;}
+  .exmx .chart{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:16px;padding:10px;padding-right:235px;min-height:500px;}
   .exmx .chart svg{width:100%;height:auto;display:block;}
   .exmx .dot{cursor:pointer;}
   .exmx .dot circle{transition:.18s;}
   .exmx .dot:hover circle{stroke:#f0c46e;stroke-width:2.5;}
   .exmx .dot.active circle{stroke:#f0c46e;stroke-width:3.5;}
-  .exmx .detail{position:absolute;right:18px;top:18px;width:260px;max-height:500px;overflow:auto;background:rgba(34,44,57,.88);backdrop-filter:blur(10px);border:1px solid var(--gold-line);border-radius:14px;padding:16px 18px;font-size:.78rem;box-shadow:0 18px 50px rgba(0,0,0,.28);}
+  .exmx .detail{position:absolute;right:18px;top:18px;width:240px;max-height:440px;overflow:auto;background:rgba(34,44,57,.88);backdrop-filter:blur(10px);border:1px solid var(--gold-line);border-radius:14px;padding:14px 16px;font-size:.74rem;box-shadow:0 18px 50px rgba(0,0,0,.28);}
   .exmx .detail .nm{font-size:1.18em;color:var(--gold-bright);font-weight:700;margin-bottom:10px;line-height:1.35;}
   .exmx .detail .lab{font-size:.94em;color:var(--gold);letter-spacing:1px;margin-bottom:3px;}
   .exmx .detail .txt{font-size:.96em;color:var(--text-2);line-height:1.65;margin-bottom:12px;}
@@ -538,7 +538,7 @@
 
     <div class="detail" id="solDetail">
       <div class="nm" id="solNm">本提案：AI 自主探索系統</div>
-      <div class="lab">代表例子</div>
+      <div class="lab" id="solExLab">代表例子</div>
       <div class="txt" id="solEx"></div>
       <div class="lab" id="solAdvLab">主要優點</div>
       <div class="txt" id="solAdv"></div>
@@ -988,6 +988,35 @@
     </div>
   </div>
 
+  <p>這套分工背後，其實是一個 AI 時代的教育產品流程：</p>
+  <div class="workflow">
+    <div class="workflow-step"><div class="n">01</div><div class="t">資料整理</div></div>
+    <div class="workflow-step"><div class="n">02</div><div class="t">提問引導</div></div>
+    <div class="workflow-step"><div class="n">03</div><div class="t">行動拆解</div></div>
+    <div class="workflow-step"><div class="n">04</div><div class="t">反思回饋</div></div>
+    <div class="workflow-step"><div class="n">05</div><div class="t">成果轉譯</div></div>
+  </div>
+  <div class="division-cards">
+    <div class="division-card">
+      <div class="h">AI 最適合處理</div>
+      <ul>
+        <li>基礎整理</li>
+        <li>初稿產出</li>
+        <li>任務拆解</li>
+        <li>反思紀錄</li>
+      </ul>
+    </div>
+    <div class="division-card">
+      <div class="h">真人時間留給</div>
+      <ul>
+        <li>深度追問</li>
+        <li>關係建立</li>
+        <li>複雜判斷</li>
+        <li>卡關陪伴</li>
+      </ul>
+    </div>
+  </div>
+
   <p>這樣一來，每次 1 小時諮詢不需要從零問資料或修初稿。AI 先完成基礎盤點與草稿整理，真人則專注在判斷、追問、情緒支持與現實校準。</p>
   <blockquote class="pull">AI 不取代老師、mentor 或教練，而是讓真人不必浪費時間從零開始，<span class="gold-text">並把學生先整理到一個可以被討論、被回饋、被支持的狀態。</span></blockquote>
 
@@ -1025,35 +1054,6 @@
 
   <div class="intersect">生涯 × 教育 × 系統 × 實戰<br>＝ 不只提出概念，而能把它做成學生、老師、mentor 與公益場域都用得起來的系統</div>
 
-  <h3>＋ 懂 AI 時代的產品化</h3>
-  <p>我不是把 AI 當答案機器，而是把它放進一條完整的教育流程：</p>
-  <div class="workflow">
-    <div class="workflow-step"><div class="n">01</div><div class="t">資料整理</div></div>
-    <div class="workflow-step"><div class="n">02</div><div class="t">提問引導</div></div>
-    <div class="workflow-step"><div class="n">03</div><div class="t">行動拆解</div></div>
-    <div class="workflow-step"><div class="n">04</div><div class="t">反思回饋</div></div>
-    <div class="workflow-step"><div class="n">05</div><div class="t">成果轉譯</div></div>
-  </div>
-  <div class="division-cards">
-    <div class="division-card">
-      <div class="h">AI 最適合處理</div>
-      <ul>
-        <li>基礎整理</li>
-        <li>初稿產出</li>
-        <li>任務拆解</li>
-        <li>反思紀錄</li>
-      </ul>
-    </div>
-    <div class="division-card">
-      <div class="h">真人時間留給</div>
-      <ul>
-        <li>深度追問</li>
-        <li>關係建立</li>
-        <li>複雜判斷</li>
-        <li>卡關陪伴</li>
-      </ul>
-    </div>
-  </div>
   <h3>學員故事：Before → After</h3>
   <div class="story-flow">
     <div class="story-row">
@@ -1098,13 +1098,12 @@
       <div class="cap"><strong>鏡新聞專題採訪</strong>生涯探索與休學重考相關議題曾被媒體報導，顯示這不是個人興趣，而是正在被社會討論的教育問題。</div>
     </div>
   </div>
-  <p><strong>＋ 有可被驗證的學生故事與教育現場連結：</strong>文章曾刊登翻轉教育、關鍵評論網；曾受鏡新聞專題採訪、親子天下相關採訪／活動邀請；也曾於學習家年會擺攤與分享。</p>
-
   <h3>補充：我的創業動機</h3>
   <div class="aside"><p style="margin:0;color:var(--text-1);">如果用一句話說我的創業動機：<strong>我是一個看到現況可以更好，就會想去突破的優化者。</strong></p></div>
   <p>這種特質，反映在幾件事上：</p>
   <ol class="steps">
     <li><strong>我對教育現場特別敏感</strong>：從一開始做程式教育，我就是因為看不慣現有教學模式讓學生學得很痛苦，才開始發展新的教學方法。</li>
+    <li><strong>我走進現有教學現場後，看見很多值得被重新設計的地方</strong>：不論是課程、營隊、輔導或學習歷程，現場常常有很多好資源，但資源之間沒有被串起來；學生被要求產出成果，卻很少有人陪他理解自己、整理經驗、形成假設、完成行動與復盤。這讓我更確定，生涯教育需要的不只是更多活動，而是一套能把學習、探索、反思與真人支持連成一條路徑的系統。</li>
     <li><strong>我看見生涯教育明明可以更好</strong>：後來轉向生涯教育，是因為我看見它明明可以結合科技、系統設計與真人陪伴做得更好，卻很少有人真的把它做成完整系統。</li>
     <li><strong>我一直在重新設計更有效的學習方式</strong>：陪跑營迭代超過 7 次，把一套方法拆解成 OGSM 目標系統、職涯基地、10+ 個 AI agent，持續用資料與回饋優化整套流程。</li>
     <li><strong>我對人生方向、幸福、迷惘有長期關注</strong>：更早之前，我在 Facebook 上常認真回答陌生人關於人生方向、死亡、幸福與迷惘的匿名提問——那些經驗讓我發現，我對「人如何獲得幸福、如何找到方向、如何面對人生問題」特別感興趣。</li>
@@ -1274,8 +1273,6 @@
     <ul>
       <li><strong>AI 課前作業 × 團體回饋原型：</strong><a href="https://camp.reseturlife.org/" target="_blank" rel="noopener">W1｜作品集</a></li>
       <li><strong>生涯探索方法、諮詢與陪跑營成果：</strong><a href="https://app.notion.com/p/218fc5279b8f80d88949ebd3ed4d8280?pvs=21" target="_blank" rel="noopener">公開我的兩年生涯實驗：從迷惘到探索天職的全攻略</a></li>
-      <li><strong>媒體曝光、工作坊、演講與社群數據：</strong>臺北市創業補助簡報｜重啟人生計畫</li>
-      <li><strong>完整企劃脈絡與系統設計：</strong>高中生公益 AI 自主探索系統｜正式企劃書</li>
     </ul>
   </div>
 </section>
@@ -1327,9 +1324,13 @@
     ai:{nm:'一般 AI 聊天工具',ex:'ChatGPT、Claude、Gemini、一般 AI 生涯建議工具',adv:'即時、低成本、可對話。',gap:'能回答問題，卻缺少長期個人檔案、教育流程、老師協作與學習歷程銜接。'},
     dream:{nm:'公益型 mentor 生涯探索',ex:'均一 DreamMore',adv:'有真人 mentor、一對一陪伴、職涯視野拓展、Coffee Chat 與測驗工具。',gap:'真人陪伴非常珍貴，但時間有限；會前整理、會後反思、任務追蹤、資料累積與跨梯次交接仍需要系統化支持。'}
   };
-  var solNm=document.getElementById('solNm'),solEx=document.getElementById('solEx'),solAdv=document.getElementById('solAdv'),solGap=document.getElementById('solGap'),solAdvLab=document.getElementById('solAdvLab'),solGapLab=document.getElementById('solGapLab');
+  var solNm=document.getElementById('solNm'),solExLab=document.getElementById('solExLab'),solEx=document.getElementById('solEx'),solAdv=document.getElementById('solAdv'),solGap=document.getElementById('solGap'),solAdvLab=document.getElementById('solAdvLab'),solGapLab=document.getElementById('solGapLab');
   function selSol(k){var d=SOL[k];if(!d)return;solNm.textContent=d.nm;solEx.textContent=d.ex;
-    solAdvLab.textContent=(k==='proposal')?'本提案優點':'主要優點';
+    var isProposal=(k==='proposal');
+    solExLab.style.display=isProposal?'none':'';
+    solEx.style.display=isProposal?'none':'';
+    solAdvLab.style.display=isProposal?'none':'';
+    solAdvLab.textContent='主要優點';
     if(Array.isArray(d.adv)){
       solAdv.innerHTML='<ul>'+d.adv.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';
     }else{
