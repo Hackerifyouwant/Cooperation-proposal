@@ -38,6 +38,7 @@
   .en{font-family:var(--font-en);}
   .en-i{font-family:var(--font-en);font-style:italic;}
   .wrap{max-width:1000px;margin:0 auto;padding:0 28px;}
+  .wide-bleed{width:min(1180px,calc(100vw - 56px));margin-left:50%;transform:translateX(-50%);}
 
   /* 錨點偏移（避開固定頂條）*/
   section[id]{scroll-margin-top:74px;}
@@ -78,6 +79,8 @@
   ul.list li::before{content:"";position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--gold);}
   ol.steps{margin:0 0 24px;padding-left:22px;line-height:1.7;color:var(--text-2);}
   ol.steps li{margin-bottom:10px;}
+  .steps .mini-points{display:grid;gap:10px;margin:14px 0 0;padding:0;list-style:none;}
+  .steps .mini-points li{margin:0;background:rgba(255,255,255,.035);border:1px solid var(--border);border-left:3px solid var(--gold-line);border-radius:12px;padding:12px 16px;color:var(--text-2);line-height:1.65;}
   .visual-list{display:grid;gap:10px;margin:14px 0 24px;padding:0;list-style:none;}
   .visual-list li{background:rgba(255,255,255,.035);border:1px solid var(--border);border-left:3px solid var(--gold-line);border-radius:12px;padding:12px 16px;color:var(--text-2);line-height:1.65;}
   .visual-list.compact{grid-template-columns:repeat(2,1fr);}
@@ -155,19 +158,26 @@
 
   /* ── 互動：方案盤點 × 低成本×高陪伴 定位圖 ── */
   .exmx{position:relative;margin:22px 0 28px;}
-  .exmx .chart{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:16px;padding:10px;padding-right:235px;min-height:500px;}
-  .exmx .chart svg{width:100%;height:auto;display:block;}
+  .solution-map{margin-top:54px;}
+  .solution-map h3{margin-top:0;}
+  .solution-map h3,.solution-map>.hint{max-width:1000px;margin-left:auto;margin-right:auto;}
+  .solution-map .chips{max-width:1050px;margin-left:auto;margin-right:auto;justify-content:center;}
+  .exmx .chart{background:radial-gradient(circle at 27% 24%,rgba(224,162,60,.10),transparent 34%),rgba(255,255,255,.025);border:1px solid var(--border);border-radius:20px;padding:20px;min-height:620px;box-shadow:0 24px 80px rgba(0,0,0,.22);}
+  .exmx .chart svg{width:100%;height:auto;display:block;max-width:1040px;margin:0 auto;}
   .exmx .dot{cursor:pointer;}
   .exmx .dot circle{transition:.18s;}
   .exmx .dot:hover circle{stroke:#f0c46e;stroke-width:2.5;}
   .exmx .dot.active circle{stroke:#f0c46e;stroke-width:3.5;}
-  .exmx .detail{position:absolute;right:18px;top:18px;width:240px;max-height:440px;overflow:auto;background:rgba(34,44,57,.88);backdrop-filter:blur(10px);border:1px solid var(--gold-line);border-radius:14px;padding:14px 16px;font-size:.74rem;box-shadow:0 18px 50px rgba(0,0,0,.28);}
+  .exmx .detail{position:absolute;right:30px;bottom:30px;width:310px;max-height:410px;overflow:auto;background:rgba(34,44,57,.90);backdrop-filter:blur(12px);border:1px solid var(--gold-line);border-radius:16px;padding:18px 20px;font-size:.82rem;box-shadow:0 22px 60px rgba(0,0,0,.34);}
   .exmx .detail .nm{font-size:1.18em;color:var(--gold-bright);font-weight:700;margin-bottom:10px;line-height:1.35;}
   .exmx .detail .lab{font-size:.94em;color:var(--gold);letter-spacing:1px;margin-bottom:3px;}
   .exmx .detail .txt{font-size:.96em;color:var(--text-2);line-height:1.65;margin-bottom:12px;}
   .exmx .detail .txt:last-child{margin-bottom:0;}
   .exmx .detail .txt ul{margin:0;padding-left:18px;}
   .exmx .detail .txt li{margin-bottom:8px;}
+  .map-insight{position:absolute;left:34px;bottom:34px;max-width:520px;border:1px solid var(--gold-line);border-radius:16px;background:rgba(22,29,39,.82);backdrop-filter:blur(10px);padding:16px 20px;box-shadow:0 18px 50px rgba(0,0,0,.26);}
+  .map-insight .eyebrow{font-size:var(--fs-note);letter-spacing:1px;color:var(--gold);margin-bottom:4px;}
+  .map-insight strong{display:block;color:var(--gold-bright);font-size:var(--fs-body);line-height:1.65;}
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px;}
   .chip-btn{cursor:pointer;background:var(--card-2);border:1px solid var(--border);color:var(--text-2);border-radius:999px;padding:6px 14px;font-size:var(--fs-note);font-family:var(--font-zh);transition:.18s;}
   .chip-btn:hover{border-color:var(--gold-line);color:var(--text-1);}
@@ -336,6 +346,11 @@
   .closing{text-align:center;padding:90px 0;}
   .closing .big{font-size:var(--fs-h1);font-weight:800;line-height:1.5;max-width:760px;margin:0 auto 26px;}
   .closing .big .hl{color:var(--gold-bright);}
+  .closing-brands{display:flex;justify-content:center;align-items:center;gap:18px;margin-bottom:28px;}
+  .closing-brands .logo{font-size:1rem;border-radius:7px;border-width:2px;}
+  .closing-brands .logo .a,.closing-brands .logo .b{padding:5px 12px;}
+  .closing-brands .x{display:flex;align-items:center;line-height:1;color:var(--gold);font-size:1.45rem;}
+  .closing-brands .junyi{width:52px;height:52px;display:block;object-fit:contain;}
 
   footer{border-top:1px solid var(--border);padding:40px 0 60px;text-align:center;}
   footer .foot-brands{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px;}
@@ -354,8 +369,9 @@
     .cols.c2,.split2,.vs,.pillars,.cyci,.self-cards,.visual-list.compact,.experience-feature,.module-grid,.story-row,.proof-grid,.mission-choice,.handoff-flow,.workflow,.division-cards{grid-template-columns:1fr;}
     .story-arrow{display:none;}
     .handoff-arrow{display:none;}
-    .exmx .chart{padding-right:10px;min-height:auto;}
-    .exmx .detail,.portrait-card{position:static;width:auto;max-height:none;margin-top:14px;}
+    .wide-bleed{width:auto;margin-left:0;transform:none;}
+    .exmx .chart{padding:10px;min-height:auto;}
+    .exmx .detail,.map-insight,.portrait-card{position:static;width:auto;max-height:none;margin-top:14px;}
     .step{grid-template-columns:1fr;}
     .step .no{width:48px;height:48px;}
     section{padding:64px 0;}
@@ -480,14 +496,15 @@
   </ul>
   <p>如果把現有方案攤開來看，會發現它們各自補上一塊缺口，但沒有任何一種方案同時做到「低成本、長期、個人化、能累積資料、能和真人協作」。</p>
 
-  <h3>九類現有方案盤點</h3>
-  <p class="hint break-lines">
-    <span>把高中生能接觸的主要資源放進「成本 × 陪伴深度」兩軸——<strong>點擊圖中圓點，或下方任一方案膠囊</strong></span>
-    <span>查看它的代表例子、主要優點與缺口。金色高亮處＝本提案要補上的「低成本 × 高陪伴」空白象限。</span>
-  </p>
+  <div class="wide-bleed solution-map">
+    <h3>九類現有方案盤點</h3>
+    <p class="hint break-lines">
+      <span>把高中生能接觸的主要資源放進「成本 × 陪伴深度」兩軸——<strong>點擊圖中圓點，或下方任一方案膠囊</strong></span>
+      <span>查看它的代表例子、主要優點與缺口。金色高亮處＝本提案要補上的「低成本 × 高陪伴」空白象限。</span>
+    </p>
 
-  <div class="exmx">
-    <div class="chart">
+    <div class="exmx">
+      <div class="chart">
     <svg viewBox="0 0 760 440" role="img" aria-label="成本 × 陪伴深度 互動定位圖">
       <defs>
         <marker id="ah" markerWidth="9" markerHeight="9" refX="6" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#97a1ae"/></marker>
@@ -526,33 +543,39 @@
         </g>
       </g>
     </svg>
+      </div>
+
+      <div class="map-insight">
+        <div class="eyebrow">讀圖重點</div>
+        <strong>缺的不是更多單點資源，而是一套低成本、可長期、能累積資料，並在關鍵時刻接上真人的探索系統。</strong>
+      </div>
+
+      <div class="detail" id="solDetail">
+        <div class="nm" id="solNm">本提案：AI 自主探索系統</div>
+        <div class="lab" id="solExLab">代表例子</div>
+        <div class="txt" id="solEx"></div>
+        <div class="lab" id="solAdvLab">主要優點</div>
+        <div class="txt" id="solAdv"></div>
+        <div class="lab" id="solGapLab">主要缺口</div>
+        <div class="txt" id="solGap"></div>
+      </div>
     </div>
 
-    <div class="detail" id="solDetail">
-      <div class="nm" id="solNm">本提案：AI 自主探索系統</div>
-      <div class="lab" id="solExLab">代表例子</div>
-      <div class="txt" id="solEx"></div>
-      <div class="lab" id="solAdvLab">主要優點</div>
-      <div class="txt" id="solAdv"></div>
-      <div class="lab" id="solGapLab">主要缺口</div>
-      <div class="txt" id="solGap"></div>
+    <div class="chips" id="solChips">
+      <button class="chip-btn proposal" data-sol="proposal">★ 本提案</button>
+      <button class="chip-btn" data-sol="school">學校輔導與導師建議</button>
+      <button class="chip-btn" data-sol="portfolio">自主學習與學習歷程</button>
+      <button class="chip-btn" data-sol="test">心理／興趣／性向測驗</button>
+      <button class="chip-btn" data-sol="info">科系／職業資訊平台</button>
+      <button class="chip-btn" data-sol="event">短期公益／教育活動</button>
+      <button class="chip-btn" data-sol="dream">公益型 mentor 生涯探索</button>
+      <button class="chip-btn" data-sol="camp">高品質探索營／顧問</button>
+      <button class="chip-btn" data-sol="college">大學階段生涯探索課程</button>
+      <button class="chip-btn" data-sol="coach">成人職涯教練／一對一顧問</button>
+      <button class="chip-btn" data-sol="ai">一般 AI 聊天工具</button>
     </div>
+    <p class="hint">＊定位圖為示意，用於呈現各類方案在「成本／陪伴深度」兩軸上的相對位置，非精確量測。</p>
   </div>
-
-  <div class="chips" id="solChips">
-    <button class="chip-btn proposal" data-sol="proposal">★ 本提案</button>
-    <button class="chip-btn" data-sol="school">學校輔導與導師建議</button>
-    <button class="chip-btn" data-sol="portfolio">自主學習與學習歷程</button>
-    <button class="chip-btn" data-sol="test">心理／興趣／性向測驗</button>
-    <button class="chip-btn" data-sol="info">科系／職業資訊平台</button>
-    <button class="chip-btn" data-sol="event">短期公益／教育活動</button>
-    <button class="chip-btn" data-sol="dream">公益型 mentor 生涯探索</button>
-    <button class="chip-btn" data-sol="camp">高品質探索營／顧問</button>
-    <button class="chip-btn" data-sol="college">大學階段生涯探索課程</button>
-    <button class="chip-btn" data-sol="coach">成人職涯教練／一對一顧問</button>
-    <button class="chip-btn" data-sol="ai">一般 AI 聊天工具</button>
-  </div>
-  <p class="hint">＊定位圖為示意，用於呈現各類方案在「成本／陪伴深度」兩軸上的相對位置，非精確量測。</p>
 
   <blockquote class="pull">因此，現有方案的共同缺口不是「沒有價值」，而是「<span class="gold-text">沒有整合</span>」。</blockquote>
   <p>具體來說：</p>
@@ -1097,7 +1120,13 @@
   <p>這種特質，反映在幾件事上：</p>
   <ol class="steps">
     <li><strong>我對教育現場特別敏感</strong>：從一開始做程式教育，我就是因為看不慣現有教學模式讓學生學得很痛苦，才開始發展新的教學方法。</li>
-    <li><strong>我走進現有教學現場後，看見很多值得被重新設計的地方</strong>：不論是課程、營隊、輔導或學習歷程，現場常常有很多好資源，但資源之間沒有被串起來；學生被要求產出成果，卻很少有人陪他理解自己、整理經驗、形成假設、完成行動與復盤。這讓我更確定，生涯教育需要的不只是更多活動，而是一套能把學習、探索、反思與真人支持連成一條路徑的系統。</li>
+    <li><strong>我走進現有教學現場後，看見很多值得被重新設計的地方</strong>
+      <ul class="mini-points">
+        <li>不論是課程、營隊、輔導或學習歷程，現場常常有很多好資源，但資源之間沒有被串起來。</li>
+        <li>學生被要求產出成果，卻很少有人陪他理解自己、整理經驗、形成假設、完成行動與復盤。</li>
+        <li>這讓我更確定：生涯教育需要的不只是更多活動，而是一套能把學習、探索、反思與真人支持連成一條路徑的系統。</li>
+      </ul>
+    </li>
     <li><strong>我看見生涯教育明明可以更好</strong>：後來轉向生涯教育，是因為我看見它明明可以結合科技、系統設計與真人陪伴做得更好，卻很少有人真的把它做成完整系統。</li>
     <li><strong>我一直在重新設計更有效的學習方式</strong>：陪跑營迭代超過 7 次，把一套方法拆解成 OGSM 目標系統、職涯基地、10+ 個 AI agent，持續用資料與回饋優化整套流程。</li>
     <li><strong>我對人生方向、幸福、迷惘有長期關注</strong>：更早之前，我在 Facebook 上常認真回答陌生人關於人生方向、死亡、幸福與迷惘的匿名提問——那些經驗讓我發現，我對「人如何獲得幸福、如何找到方向、如何面對人生問題」特別感興趣。</li>
@@ -1239,10 +1268,10 @@
 <!-- ───────── 結語 ───────── -->
 <div class="wrap">
   <div class="closing">
-    <div class="foot-brands" style="display:flex;justify-content:center;align-items:center;gap:16px;margin-bottom:28px;">
-      <span class="logo" style="transform:scale(1.2);"><span class="a">RESET</span><span class="b">STUDIO</span></span>
+    <div class="closing-brands">
+      <span class="logo"><span class="a">RESET</span><span class="b">STUDIO</span></span>
       <span class="x">×</span>
-      <img class="junyi" src="assets/junyi-x-icon.png" width="40" height="40" alt="均一平台教育基金會 Junyi Academy">
+      <img class="junyi" src="assets/junyi-x-icon.png" alt="均一平台教育基金會 Junyi Academy">
     </div>
     <div class="big">我希望和均一一起，<br>把<span class="hl">高品質探索</span>，<br>變成每個孩子都能取得的<span class="hl">基礎教育支持</span>。</div>
     <p class="tagline en-i" style="font-size:var(--fs-h2);color:var(--gold-bright);">reset your life, enrich your life</p>
